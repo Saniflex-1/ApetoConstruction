@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ff6525;
+}
+
+h4 {
+  margin: 0 auto;
+  width: 80%;
+  color: #272727;
+}
+h4_p {
+  color: #272727;
+  font-weight: 400;
+}/*# sourceMappingURL=main.css.map */
