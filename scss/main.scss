@@ -1,23 +1,35 @@
 @import "./resetor";
 @import './variable';
+@import "../style/home";
 
-
-@function weight($weight-name){
-    @return map-get($font-weight, $weight-name )
-}
 
 body{
-    background-color: $second-color;
-    
+    background: $primary-color;
+    color: $text-color;
+    line-height: 1;
+    height: 100vh;
 }
 
-h4{
-    margin: 0 auto;
-    width: 80%;
-    color: $primary-color;
-
-    &_p{
-        color: $primary-color;
-        font-weight: weight(regular);
-    }
+h1, h2 {
+    font-weight: weight(regular);
 }
+
+a{
+    color: $text-color;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+} 
+
+main{
+    height: 100%;
+    width: 100%;
+
+}
+
+
