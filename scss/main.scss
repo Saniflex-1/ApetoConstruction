@@ -1,0 +1,23 @@
+@import "./resetor";
+@import './variable';
+
+
+@function weight($weight-name){
+    @return map-get($font-weight, $weight-name )
+}
+
+body{
+    background-color: $second-color;
+    
+}
+
+h4{
+    margin: 0 auto;
+    width: 80%;
+    color: $primary-color;
+
+    &_p{
+        color: $primary-color;
+        font-weight: weight(regular);
+    }
+}
