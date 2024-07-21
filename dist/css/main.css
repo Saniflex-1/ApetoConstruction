@@ -197,7 +197,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  margin: 80px;
+  margin: 0px;
   margin-top: 30px;
   margin-bottom: 5px;
 }
@@ -243,12 +243,20 @@
   }
 }
 @media screen and (min-width: 360px) {
+  .construction_title {
+    margin-top: 100px;
+    margin-bottom: -80px;
+  }
+  .construction_title p {
+    padding: 15px;
+  }
   .construction_sections {
     grid-template-columns: repeat(1, 1fr);
   }
   .construction_sections .section {
     display: flex;
     flex-direction: column;
+    margin: 20px;
   }
   .construction_sections .section img {
     width: 100%;
