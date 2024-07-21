@@ -62,7 +62,7 @@
   gap: 50px;
 }
 .getStarted_sec {
-  background-color: red;
+  background-color: rgb(163, 36, 36);
   display: flex;
   align-items: center;
   flex-direction: column;
