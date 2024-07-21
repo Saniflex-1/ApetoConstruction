@@ -2,7 +2,7 @@
     .construction{
 
         &_sections{
-        grid-template-columns: repeat(1, 1fr);
+        // grid-template-columns: repeat(1, 1fr);
 
         
 
@@ -23,6 +23,8 @@
         }
     }
 }
+
+
 
 @include media-sm{
     .construction{
@@ -47,6 +49,41 @@
             margin: 20px;
             img{
                 width: 100%;
+            }
+
+            .intro{
+                padding-left: 25px;
+                margin-bottom: 20px;
+            }
+        }
+
+        }
+    }
+}
+@include media-lg{
+    .construction{
+         &_title{
+            margin-top: 10px;
+            margin-bottom: -40px;
+
+            p{
+                padding: 15px;
+                line-height: 1.2;
+                font-size: 17px;
+            }
+         }
+
+        &_sections{
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 70px;
+        padding-right: 70px;
+
+
+        .section{
+            display: flex;
+            flex-direction: row;
+            img{
+                width: 250px;
             }
 
             .intro{
