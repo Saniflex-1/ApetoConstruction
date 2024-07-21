@@ -5,6 +5,7 @@
     justify-content: center;
     height: 100vh;
     width: 100%;
+    color: $text-color;
     // padding-top: 40vh;
     // overflow: hidden;
     text-align: center;
@@ -151,10 +152,15 @@
                 border-radius: 3px;
                 border: none;
 
+                font-size: 15px;
+                letter-spacing: 0.1px;
+                color: rgb(43, 49, 49);
+
 
                 &::placeholder{
                 text-transform: capitalize;
-                color: red;
+                color: rgb(214, 225, 225);
+                font-weight: weight(bold);
                  }
             }
 
@@ -183,5 +189,86 @@
             }
         }
 
+    }
+}
+
+.construction{
+    position: relative;
+    height: 100vh;
+    
+    &_title{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 100%;
+
+        .tit{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 20px;
+
+            h2{
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+
+        .span{
+            background-color: $second-color;
+            width: 40px;
+            height: 2px;
+        }
+
+        p{
+            margin-bottom: 35px;
+        }
+
+    }
+
+    // Place to style construction components
+
+    &_sections{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 40px;
+        margin: 80px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        
+        .section{
+            // object-fit: cover;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 1px solid rgb(154, 143, 143);
+            display: flex;
+            gap: 20px;
+
+            img{
+                width: 250px;
+                height: 340px;
+                object-fit: cover;
+            }
+
+            .intro{
+                display: flex;
+                // align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                // gap: 20px;
+
+                p{
+                    color: rgb(85, 73, 73);
+                    line-height: 1.1;
+                    font-size: 15px;
+                }
+            }
+        }
     }
 }

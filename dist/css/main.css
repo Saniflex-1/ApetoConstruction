@@ -12,6 +12,7 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
+  color: #fff;
   text-align: center;
   align-items: center;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.7), rgba(39, 39, 39, 0.3)), url(/dist/assets/img/constructions-2.jpg) center top;
@@ -123,14 +124,19 @@
   padding: 10px;
   border-radius: 3px;
   border: none;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  color: rgb(43, 49, 49);
 }
 .getStarted_secs .form textarea::-moz-placeholder, .getStarted_secs .form input::-moz-placeholder {
   text-transform: capitalize;
-  color: red;
+  color: rgb(214, 225, 225);
+  font-weight: 700;
 }
 .getStarted_secs .form textarea::placeholder, .getStarted_secs .form input::placeholder {
   text-transform: capitalize;
-  color: red;
+  color: rgb(214, 225, 225);
+  font-weight: 700;
 }
 .getStarted_secs .form textarea {
   height: 90px;
@@ -151,9 +157,74 @@
   cursor: pointer;
 }
 
+.construction {
+  position: relative;
+  height: 100vh;
+}
+.construction_title {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.construction_title .tit {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.construction_title .tit h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.construction_title .span {
+  background-color: #ff6525;
+  width: 40px;
+  height: 2px;
+}
+.construction_title p {
+  margin-bottom: 35px;
+}
+.construction_sections {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 40px;
+  margin: 80px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+.construction_sections .section {
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid rgb(154, 143, 143);
+  display: flex;
+  gap: 20px;
+}
+.construction_sections .section img {
+  width: 250px;
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.construction_sections .section .intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.construction_sections .section .intro p {
+  color: rgb(85, 73, 73);
+  line-height: 1.1;
+  font-size: 15px;
+}
+
 body {
   background: #fff;
-  color: #fff;
   line-height: 1;
   height: 100vh;
   height: 100vh;
