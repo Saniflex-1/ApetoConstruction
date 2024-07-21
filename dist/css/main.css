@@ -101,6 +101,7 @@
 .getStarted_secs h3 {
   font-size: 15px;
   color: rgb(45, 34, 34);
+  margin-bottom: 15px;
 }
 .getStarted_secs p {
   font-size: 15px;
@@ -120,6 +121,8 @@
   margin-bottom: 10px;
   height: 50px;
   padding: 10px;
+  border-radius: 3px;
+  border: none;
 }
 .getStarted_secs .form textarea::-moz-placeholder, .getStarted_secs .form input::-moz-placeholder {
   text-transform: capitalize;
