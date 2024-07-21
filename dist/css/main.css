@@ -245,11 +245,13 @@
 }
 @media screen and (min-width: 360px) {
   .construction_title {
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: -80px;
   }
   .construction_title p {
     padding: 15px;
+    line-height: 1.2;
+    font-size: 17px;
   }
   .construction_sections {
     grid-template-columns: repeat(1, 1fr);
