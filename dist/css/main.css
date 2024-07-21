@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .home {
@@ -57,35 +58,106 @@
   height: 100vh;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 .getStarted_sec {
-  width: 800px;
-  background-color: rgb(163, 36, 36);
+  width: 500px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .getStarted_sec h2 {
   text-align: start;
   color: black;
+  margin-bottom: 25px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.getStarted_sec p {
+  color: black;
+  font-weight: 300;
+}
+.getStarted_sec span {
+  margin-bottom: 20px;
+  width: 60px;
+  height: 3px;
+  background-color: #ff6525;
 }
 .getStarted_secs {
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
-  background-color: aqua;
+  background-color: rgb(214, 225, 225);
+  height: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  justify-content: center;
+}
+.getStarted_secs h3 {
+  font-size: 15px;
+  color: rgb(45, 34, 34);
+}
+.getStarted_secs p {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  margin-bottom: 10px;
+  line-height: 1.2;
 }
 .getStarted_secs .form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.getStarted_secs .form textarea, .getStarted_secs .form input {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 50px;
+  padding: 10px;
+}
+.getStarted_secs .form textarea::-moz-placeholder, .getStarted_secs .form input::-moz-placeholder {
+  text-transform: capitalize;
+  color: red;
+}
+.getStarted_secs .form textarea::placeholder, .getStarted_secs .form input::placeholder {
+  text-transform: capitalize;
+  color: red;
+}
+.getStarted_secs .form textarea {
+  height: 90px;
+}
+.getStarted_secs .form .getQuote {
+  background-color: #ff6525;
+  height: 50px;
+  width: 170px;
+  border: none;
+  border-radius: 7px;
+  text-align: center;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  margin-top: 10px;
+}
+.getStarted_secs .form .getQuote:hover {
+  background: rgba(255, 101, 37, 0.85);
+  cursor: pointer;
 }
 
 body {
-  background: #272727;
+  background: #fff;
   color: #fff;
   line-height: 1;
   height: 100vh;
   height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1, h2 {
