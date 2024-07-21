@@ -26,15 +26,23 @@
 
 @include media-sm{
     .construction{
+         &_title{
+            margin-top: 100px;
+            margin-bottom: -80px;
+
+            p{
+                padding: 15px;
+            }
+         }
+
         &_sections{
         grid-template-columns: repeat(1, 1fr);
 
-        
 
         .section{
             display: flex;
             flex-direction: column;
-
+            margin: 20px;
             img{
                 width: 100%;
             }
