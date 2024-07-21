@@ -29,6 +29,10 @@
   font-weight: 700;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.home h6 {
+  margin-top: 10px;
+  font-weight: 100;
+}
 .home_p {
   font-size: 1rem;
   font-family: "poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -190,9 +194,8 @@
 }
 .construction_sections {
   position: relative;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin: 80px;
   margin-top: 30px;
@@ -223,6 +226,38 @@
   font-size: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .construction_sections {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .construction_sections .section {
+    display: flex;
+    flex-direction: column;
+  }
+  .construction_sections .section img {
+    width: 100%;
+  }
+  .construction_sections .section .intro {
+    padding-left: 25px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 360px) {
+  .construction_sections {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .construction_sections .section {
+    display: flex;
+    flex-direction: column;
+  }
+  .construction_sections .section img {
+    width: 100%;
+  }
+  .construction_sections .section .intro {
+    padding-left: 25px;
+    margin-bottom: 20px;
+  }
+}
 body {
   background: #fff;
   line-height: 1;
