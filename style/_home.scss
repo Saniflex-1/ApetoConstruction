@@ -29,7 +29,7 @@
 
 
     &_title{
-        font-size: 3.8rem;
+        font-size: 30px;
         font-weight: weight(bold);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
@@ -68,14 +68,17 @@
 }
 
 .getStarted{
-    
+    position: relative;
+    height: 100vh;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    // gap: 50px;
 
     &_sec{
-        width: 900px;
+        width: 800px;
+        // width: 900px;
         background-color: rgb(163, 36, 36);
         display: flex;
         // align-items: center;
@@ -85,17 +88,20 @@
             text-align: start;
             color: black;
         }
+
         
     }
-
-
+    
     &_secs{
         display: flex;
         flex-direction: column;
+        background-color: aqua;
 
         .form{
             display: flex;
             flex-direction: column;
         }
+
     }
+
 }
