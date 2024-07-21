@@ -54,18 +54,20 @@
 }
 
 .getStarted {
-  height: 100vh;
-  margin-left: 70px;
-  margin-right: 70px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 50px;
 }
 .getStarted_sec {
+  width: 900px;
   background-color: rgb(163, 36, 36);
   display: flex;
-  align-items: center;
   flex-direction: column;
+}
+.getStarted_sec h2 {
+  text-align: start;
+  color: black;
 }
 .getStarted_secs {
   display: flex;
@@ -80,6 +82,7 @@ body {
   background: #272727;
   color: #fff;
   line-height: 1;
+  height: 100vh;
   height: 100vh;
 }
 
