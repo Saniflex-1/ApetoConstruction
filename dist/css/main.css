@@ -15,7 +15,7 @@
   color: #fff;
   text-align: center;
   align-items: center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.7), rgba(39, 39, 39, 0.3)), url(/dist/assets/img/constructions-2.jpg) center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.7), rgba(39, 39, 39, 0.3)), url(/dist/assets/img/hero-carousel/hero-carousel-1.jpg) center top;
   background-size: cover;
 }
 .home span {
@@ -192,6 +192,9 @@
 }
 .construction_title p {
   margin-bottom: 35px;
+  max-width: 700px;
+  text-align: center;
+  text-wrap: wrap;
 }
 .construction_sections {
   position: relative;
@@ -228,9 +231,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .construction_sections {
-    grid-template-columns: repeat(1, 1fr);
-  }
   .construction_sections .section {
     display: flex;
     flex-direction: column;
@@ -263,6 +263,33 @@
   }
   .construction_sections .section img {
     width: 100%;
+  }
+  .construction_sections .section .intro {
+    padding-left: 25px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .construction_title {
+    margin-top: 10px;
+    margin-bottom: -40px;
+  }
+  .construction_title p {
+    padding: 15px;
+    line-height: 1.2;
+    font-size: 17px;
+  }
+  .construction_sections {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .construction_sections .section {
+    display: flex;
+    flex-direction: row;
+  }
+  .construction_sections .section img {
+    width: 250px;
   }
   .construction_sections .section .intro {
     padding-left: 25px;
