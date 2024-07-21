@@ -1,0 +1,50 @@
+@include media-md{
+    .construction{
+
+        &_sections{
+        grid-template-columns: repeat(1, 1fr);
+
+        
+
+        .section{
+            display: flex;
+            flex-direction: column;
+
+            img{
+                width: 100%;
+            }
+
+            .intro{
+                padding-left: 25px;
+                margin-bottom: 20px;
+            }
+        }
+
+        }
+    }
+}
+
+@include media-sm{
+    .construction{
+        &_sections{
+        grid-template-columns: repeat(1, 1fr);
+
+        
+
+        .section{
+            display: flex;
+            flex-direction: column;
+
+            img{
+                width: 100%;
+            }
+
+            .intro{
+                padding-left: 25px;
+                margin-bottom: 20px;
+            }
+        }
+
+        }
+    }
+}
