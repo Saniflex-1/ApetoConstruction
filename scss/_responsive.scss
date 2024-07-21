@@ -27,11 +27,13 @@
 @include media-sm{
     .construction{
          &_title{
-            margin-top: 100px;
+            margin-top: 150px;
             margin-bottom: -80px;
 
             p{
                 padding: 15px;
+                line-height: 1.2;
+                font-size: 17px;
             }
          }
 
