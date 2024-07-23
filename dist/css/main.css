@@ -200,10 +200,10 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 30px;
   margin: 0px;
-  margin-top: 20px;
-  margin-bottom: 5px;
+  margin-top: 25px;
+  margin-bottom: 8px;
 }
 .construction_sections .section {
   overflow: hidden;
@@ -269,8 +269,56 @@
   line-height: 1.2;
 }
 .services_allServices {
+  position: relative;
   display: grid;
-  margin: 0;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 55px;
+  margin-right: 55px;
+}
+.services_allServices .card {
+  display: flex;
+  margin-left: 30px;
+}
+.services_allServices .card_sections {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.services_allServices .card_sections .icons {
+  position: relative;
+  margin-bottom: 30px;
+}
+.services_allServices .card_sections .icons i {
+  position: relative;
+  color: rgba(39, 39, 39, 0.8);
+  font-size: 60px;
+}
+.services_allServices .card_sections .icons .fa-circle {
+  position: absolute;
+  color: rgb(181, 229, 229);
+  font-size: 55px;
+  margin-left: 30px;
+}
+.services_allServices .card_sections .heading {
+  position: relative;
+  margin-bottom: 30px;
+}
+.services_allServices .card_sections .heading h3 {
+  color: #272727;
+  font-size: 20px;
+}
+.services_allServices .card_sections .heading .span {
+  margin-top: 10px;
+  width: 150px;
+  height: 5px;
+  background: rgb(181, 229, 229);
+}
+.services_allServices .card_sections .intro {
+  color: rgb(25, 10, 10);
+  line-height: 1.2;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
