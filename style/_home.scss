@@ -248,10 +248,10 @@
         grid-template-columns: repeat(2, 1fr);
         // justify-content: space-around;
         // flex-direction: row;
-        gap: 40px;
+        gap: 30px;
         margin: 0px;
-        margin-top: 20px;
-        margin-bottom: 5px;
+        margin-top: 25px;
+        margin-bottom: 8px;
         
         .section{
             // object-fit: cover;
@@ -331,9 +331,77 @@
     }
 
     &_allServices{
+        position: relative;
         display: grid;
-        margin: 0;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 55px;
+        margin-right: 55px;
+
+        .card{
+            display: flex;
+            // background-color: black;
+            margin-left: 30px;
+            
+            &_sections{
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                // gap: 90px;
+                background-color: rgb(255, 255, 255);
+                color: black;
+
+                .icons{
+                    position: relative;
+                    margin-bottom: 30px;
+
+                    i {
+                        position: relative;
+                        color: rgba($primary-color, 0.8);
+                        font-size: 60px;
+                        // z-index: 1;
+
+                        // &:first-child{
+                        //     font-size: 70px;
+                        //     color: rgb(224, 243, 243);
+                        // }
+                    }
+
+                    .fa-circle{
+                        position: absolute;
+                        color: rgb(181, 229, 229);
+                        font-size: 55px;
+                        margin-left: 30px;
+                    }
+                }
+
+                .heading{
+                    position: relative;
+                    margin-bottom: 30px;
+
+                    h3{
+                        color: $primary-color;
+                        font-size: 20px;
+                    }
+
+                    .span{
+                        margin-top: 10px;
+                        width: 150px;
+                        height: 5px;
+                        background: rgb(181, 229, 229);
+                    }
+                }
+
+                .intro{
+                    color: rgb(25, 10, 10);
+                    line-height: 1.2;
+                    margin-bottom: 30px;
+                }
+            }
+            
+        }
     }
+
+
 
 
 }
