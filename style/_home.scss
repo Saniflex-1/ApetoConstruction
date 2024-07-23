@@ -343,6 +343,7 @@
             margin-left: 30px;
             
             &_sections{
+                @include transition-ease;
                 padding: 30px;
                 display: flex;
                 flex-direction: column;
@@ -371,6 +372,7 @@
                         color: rgb(181, 229, 229);
                         font-size: 55px;
                         margin-left: 30px;
+                        @include transition-ease;
                     }
                 }
 
@@ -388,6 +390,7 @@
                         width: 150px;
                         height: 5px;
                         background: rgb(181, 229, 229);
+                        @include transition-ease;
                     }
                 }
 
@@ -395,6 +398,10 @@
                     color: rgb(25, 10, 10);
                     line-height: 1.2;
                     margin-bottom: 30px;
+                }
+                
+                &:hover{
+                     cursor: progress;
                 }
             }
             
