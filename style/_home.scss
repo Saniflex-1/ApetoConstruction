@@ -250,7 +250,7 @@
         // flex-direction: row;
         gap: 40px;
         margin: 0px;
-        margin-top: 30px;
+        margin-top: 2px;
         margin-bottom: 5px;
         
         .section{
@@ -330,5 +330,10 @@
 
     }
 
-    
+    &_allServices{
+        display: grid;
+        margin: 0;
+    }
+
+
 }
