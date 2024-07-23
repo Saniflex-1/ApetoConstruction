@@ -164,7 +164,6 @@
 
 .construction {
   position: relative;
-  height: 100vh;
 }
 .construction_title {
   margin-top: 10px;
@@ -195,6 +194,7 @@
   max-width: 700px;
   text-align: center;
   text-wrap: wrap;
+  line-height: 1.2;
 }
 .construction_sections {
   position: relative;
@@ -228,6 +228,45 @@
   color: rgb(85, 73, 73);
   line-height: 1.1;
   font-size: 15px;
+}
+
+.services {
+  position: relative;
+  height: 100vh;
+  background-color: rgb(224, 243, 243);
+}
+.services_title {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.services_title .tit {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.services_title .tit h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.services_title .span {
+  background-color: #ff6525;
+  width: 40px;
+  height: 2px;
+}
+.services_title p {
+  margin-bottom: 35px;
+  max-width: 700px;
+  text-align: center;
+  text-wrap: wrap;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 @media screen and (min-width: 768px) {
