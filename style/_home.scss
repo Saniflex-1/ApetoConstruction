@@ -288,11 +288,10 @@
 
 .services{
     position: relative;
-    height: 100vh;
-    // margin-top: 260px;
+    // height: 100vh;
     background-color: rgb(224, 243, 243);
     &_title{
-        margin-top: 10px;
+        margin-top: 30px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -305,7 +304,7 @@
             display: flex;
             align-items: center;
             gap: 5px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
 
             h2{
                 font-size: 25px;
@@ -320,7 +319,7 @@
         }
 
         p{
-            margin-bottom: 35px;
+            margin-bottom: 50px;
             max-width: 700px;
             text-align: center;
             text-wrap: wrap;
@@ -336,13 +335,16 @@
         grid-template-columns: repeat(3, 1fr);
         margin-left: 55px;
         margin-right: 55px;
+        padding-bottom: 70px;
 
         .card{
             display: flex;
             // background-color: black;
             margin-left: 30px;
+            margin-bottom: 20px;
             
             &_sections{
+                border-radius: 7px;
                 @include transition-ease;
                 padding: 30px;
                 display: flex;
@@ -392,16 +394,35 @@
                         background: rgb(181, 229, 229);
                         @include transition-ease;
                     }
+
+                }
+                
+                .link{
+                    font-size: 18px;
+                    @include transition-ease;
                 }
 
                 .intro{
                     color: rgb(25, 10, 10);
                     line-height: 1.2;
                     margin-bottom: 30px;
+                    @include transition-ease
                 }
                 
                 &:hover{
-                     cursor: progress;
+                     cursor: pointer;
+
+                     .fa-circle{
+                        color: $second-color;
+                     }
+
+                     .span{
+                        background-color: $second-color;
+                     }
+
+                     .link{
+                        color: $second-color;
+                     }
                 }
             }
             
