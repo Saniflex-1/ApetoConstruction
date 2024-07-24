@@ -28,6 +28,13 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
+
+    .sub{
+
+         &_service{
+            grid-template-columns: repeat(2, 1fr);
+         }
+    }
 }
 
 
@@ -77,6 +84,28 @@
             margin-right: -25px;
         }
     }
+
+    .sub{
+
+         &_service{
+            grid-template-columns: repeat(1, 1fr);
+
+             margin: -20px;
+             margin-left: -50px;
+             padding-left: -30px;
+
+             img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            width: 100%;
+            height: 590px;
+            border-radius: 7px;
+            object-fit: contain;
+        }
+
+         }
+    }
 }
 @include media-lg{
     .construction{
@@ -118,5 +147,12 @@
         &_allServices{
             grid-template-columns: repeat(3, 1fr);
         }
+    }
+
+    .sub{
+
+         &_service{
+            grid-template-columns: repeat(2, 1fr);
+         }
     }
 }
