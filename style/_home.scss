@@ -75,7 +75,7 @@
 
 .getStarted{
     position: relative;
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -333,8 +333,8 @@
         position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin-left: 55px;
-        margin-right: 55px;
+        padding-left: 55px;
+        padding-right: 55px;
         padding-bottom: 70px;
 
         .card{
