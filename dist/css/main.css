@@ -12,6 +12,7 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
   color: #fff;
   text-align: center;
   align-items: center;
@@ -422,9 +423,6 @@
 body {
   background: #fff;
   line-height: 1;
-  height: 100vh;
-  height: 100vh;
-  overflow: hidden;
 }
 
 html {
