@@ -11,12 +11,18 @@ body{
     // height: 100vh;
     // height: 100vh;
     overflow-x: hidden;
+
     
 }
 
-html{
+html, body{
+    scrollbar-track-color: red;
     scroll-behavior: smooth;
+    -webkit-scrollbar-thumb-color: red;
 }
+
+
+
 
 h1, h2 {
     font-weight: weight(regular);
@@ -39,6 +45,8 @@ main{
     width: 100%;
 
 }
+
+
 
 
 footer{
