@@ -33,6 +33,10 @@
 
 
 @include media-sm{
+    body{
+    overflow-x: hidden;
+
+    }
     .construction{
          &_title{
             margin-top: 150px;
