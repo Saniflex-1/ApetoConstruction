@@ -216,6 +216,7 @@
             display: flex;
             align-items: center;
             gap: 5px;
+            margin-top: 70px;
             margin-bottom: 20px;
 
             h2{
@@ -337,12 +338,14 @@
         padding-left: 55px;
         padding-right: 55px;
         padding-bottom: 70px;
+        overflow-x: hidden;
 
         .card{
             display: flex;
             // background-color: black;
             margin-left: 30px;
             margin-bottom: 20px;
+
             
             &_sections{
                 border-radius: 7px;

@@ -177,6 +177,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  margin-top: 70px;
   margin-bottom: 20px;
 }
 .construction_title .tit h2 {
@@ -273,6 +274,7 @@
   padding-left: 55px;
   padding-right: 55px;
   padding-bottom: 70px;
+  overflow-x: hidden;
 }
 .services_allServices .card {
   display: flex;
@@ -363,8 +365,8 @@
     overflow-x: hidden;
   }
   .construction_title {
-    margin-top: 150px;
-    margin-bottom: -80px;
+    margin-top: 70px;
+    margin-bottom: -40px;
   }
   .construction_title p {
     padding: 15px;
