@@ -163,6 +163,7 @@
 
 .construction {
   position: relative;
+  overflow-x: hidden;
 }
 .construction_title {
   margin-top: 10px;
@@ -231,6 +232,7 @@
 }
 
 .services {
+  overflow-x: hidden;
   position: relative;
   background-color: rgb(224, 243, 243);
 }
