@@ -349,14 +349,14 @@
   position: relative;
 }
 .sub_service {
+  flex-direction: row;
   margin: 80px;
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr);
 }
 .sub_service img {
   width: 650px;
-  height: 690px;
+  height: 750px;
   border-radius: 7px;
 }
 .sub_service .subAll {
@@ -366,6 +366,7 @@
   flex-direction: column;
 }
 .sub_service .subAll h3 {
+  flex-wrap: wrap;
   color: rgb(40, 21, 21);
   font-size: 30px;
   font-weight: 700;
@@ -440,9 +441,11 @@
   }
   .services_allServices {
     grid-template-columns: repeat(2, 1fr);
+    margin-right: 50px;
+    margin-left: 50px;
   }
   .sub_service {
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 360px) {
@@ -483,20 +486,14 @@
     padding: 20px;
   }
   .sub_service {
-    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
     margin: -20px;
     margin-left: -50px;
     padding-left: -30px;
   }
   .sub_service img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 590px;
+    width: 400px;
     border-radius: 7px;
-    -o-object-fit: contain;
-       object-fit: contain;
   }
   .sub_service i {
     width: 48px;
@@ -531,11 +528,21 @@
     margin-bottom: 20px;
   }
   .services_allServices {
+    margin-right: 50px;
+    margin-left: 50px;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .sub {
+    margin-top: -30px;
   }
   .sub_service {
     margin: 80px;
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+  }
+  .sub_service img {
+    width: 400px;
+    height: 720px;
+    border-radius: 7px;
   }
 }
 body {
