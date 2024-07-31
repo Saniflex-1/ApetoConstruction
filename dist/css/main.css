@@ -451,6 +451,7 @@
 @media screen and (min-width: 360px) and (max-width: 600px) {
   body {
     overflow-x: hidden;
+    background-color: red;
   }
   .construction_title {
     margin-top: 70px;
