@@ -448,7 +448,7 @@
     flex-direction: row;
   }
 }
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 360px) and (max-width: 600px) {
   body {
     overflow-x: hidden;
   }
